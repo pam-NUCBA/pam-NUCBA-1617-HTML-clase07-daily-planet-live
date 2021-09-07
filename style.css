@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital@1&family=Finger+Paint&family=Open+Sans&display=swap');
+
+/* general */
+* {
+    padding: 1%;
+    margin: 0;
+    font-family: 'Open Sans', 'Times new Roman', sans-serif;
+}
+
+img {
+    filter: saturate(0%) sepia(20%);
+}
+
+/* header */
+.suscribers {
+    padding: 5%;
+    background-color: rgb(155, 155, 155);
+    color: antiquewhite;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+}
+
+h1 {
+    display: none;
+}
+
+header img {
+    width: 40%;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+}
+
+/* navbar */
+.navList {
+    display: inline;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    /* el orden en que pasamos parametros: arriba, derecha, abajo, izquierda. Si hay solo 2: arriba/abajo, izq/der */
+    padding: 0.5% 2%;
+}
+
+.navList a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+.navList:hover {
+    background-color: rgb(182, 182, 182);
+}
