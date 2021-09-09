@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="./style.css">
     <title>Daily Planet</title>
 </head>
+
 <body>
-    <div class="suscribers">Este es un diario independiente, por favor suscríbase, que el último ataque en Metropolis nos dejó sin plata</div>
+    <div class="suscribers">Este es un diario independiente, por favor suscríbase, que el último ataque en Metropolis
+        nos dejó sin plata</div>
 
     <header>
         <img src="./assets/logo.png" alt="logo">
@@ -36,9 +39,15 @@
                     <figcaption>Superman posa frente a nuestra oficina.</figcaption>
                 </figure>
                 <div class="newsContent">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repellat pariatur, odio culpa molestiae impedit error autem ipsum esse quo optio distinctio harum eveniet eaque debitis numquam vitae sunt maxime.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repellat pariatur, odio culpa molestiae impedit error autem ipsum esse quo optio distinctio harum eveniet eaque debitis numquam vitae sunt maxime.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repellat pariatur, odio culpa molestiae impedit error autem ipsum esse quo optio distinctio harum eveniet eaque debitis numquam vitae sunt maxime.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repellat pariatur, odio
+                        culpa molestiae impedit error autem ipsum esse quo optio distinctio harum eveniet eaque debitis
+                        numquam vitae sunt maxime.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repellat pariatur, odio
+                        culpa molestiae impedit error autem ipsum esse quo optio distinctio harum eveniet eaque debitis
+                        numquam vitae sunt maxime.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repellat pariatur, odio
+                        culpa molestiae impedit error autem ipsum esse quo optio distinctio harum eveniet eaque debitis
+                        numquam vitae sunt maxime.</p>
                 </div>
             </article>
 
@@ -50,18 +59,97 @@
                     <figcaption>Superman tiene pocos amigos</figcaption>
                 </figure>
                 <div class="newsContent">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora consequuntur quos porro sint itaque saepe veritatis molestiae repudiandae assumenda? Atque necessitatibus ipsum quis a ratione eaque suscipit, at commodi fugiat!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora consequuntur quos porro sint itaque saepe veritatis molestiae repudiandae assumenda? Atque necessitatibus ipsum quis a ratione eaque suscipit, at commodi fugiat!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora consequuntur quos porro sint
+                        itaque saepe veritatis molestiae repudiandae assumenda? Atque necessitatibus ipsum quis a
+                        ratione eaque suscipit, at commodi fugiat!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora consequuntur quos porro sint
+                        itaque saepe veritatis molestiae repudiandae assumenda? Atque necessitatibus ipsum quis a
+                        ratione eaque suscipit, at commodi fugiat!</p>
                 </div>
             </article>
 
         </main>
 
-        <aside></aside>
+        <aside>
+            <article>
+                <h2>Sección Publicitaria</h2>
+                <h3>Día del niño! Especial de regalos para chicos.</h3>
+                <div class="ads">
+                    <figure>
+                        <img src="./assets/Bat-signal.png" alt="bat-signal">
+                        <figcaption>Para el murcielaguito de la casa!</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/lasso.jpeg" alt="amazon">
+                        <figcaption>Sacá la amazona que hay en vos!</figcaption>
+                    </figure>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique impedit unde maxime ea totam?
+                    Nihil id esse numquam at eaque modi illo! Dignissimos neque sit similique nihil nostrum voluptatum!
+                    Placeat!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique impedit unde maxime ea totam?
+                    Nihil id esse numquam at eaque modi illo! Dignissimos neque sit similique nihil nostrum voluptatum!
+                    Placeat!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique impedit unde maxime ea totam?
+                    Nihil id esse numquam at eaque modi illo! Dignissimos neque sit similique nihil nostrum voluptatum!
+                    Placeat!</p>
+            </article>
+            <img src="./assets/heroes.jpg" alt="">
+        </aside>
+    </div>
+
+    <div class="suscribe">
+        <h2>Suscribite para recibir todas las noticias de Metropolis!</h2>
+        <form action="/" method="GET">
+            <h3>Datos de contacto:</h3>
+            <label class="userInfo">Tu nombre:
+                <input type="text" name="suscriberName" placeholder="Clark" required>
+            </label>
+            <label class="userInfo">Tu apellido:
+                <input type="text" name="suscriberLastname" placeholder="Kent" required>
+            </label>
+            <label class="userInfo">Tu email:
+                <input type="email" name="suscriberEmail" placeholder="notsuperman@dailyplanet.com" required>
+            </label>
+            <h3>Ciudad de Origen:</h3>
+            <select name="city">
+                <option class="cityText" value="metropolis" selected>metrópolis</option>
+                <option class="cityText" value="smallville">smallville</option>
+                <option class="cityText" value="gotham">gotham</option>
+                <option class="cityText" value="central">central city</option>
+                <option class="cityText" value="fawcett">fawcett city</option>
+                <option class="cityText" value="other">otra</option>
+            </select>
+
+            <h3>Tipo de suscripción deseada:</h3>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor1" value="1">Basic
+            </label>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor2" value="2">Advanced
+            </label>
+            <label class="userType">
+                <input type="radio" name="suscriptionType" id="valor3" value="3" checked>Premium
+            </label>
+
+            <p>Qué suscripción es para mí?
+                <a href="./info.html">
+                    <strong>Hacé click para más información!</strong>
+                </a>
+            </p>
+
+            <button>Suscribirse!!</button>
+        </form>
     </div>
 
 
-    <footer></footer>
+    <footer>
+        <p>Daily planet no es propiedad registrada de superman &copy; Metrópolis 1932.</p>
+        <p>Hecho por Pam para
+            <a href="https://plataforma.nucba.io/c/coding-bootcamp" target="_blank">Nucba</a>
+        </p>
+    </footer>
 
 </body>
+
 </html>
